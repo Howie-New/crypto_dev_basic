@@ -1,85 +1,135 @@
-# Ethereum Book 项目指南
+# Ethereum Book 翻译项目指南
 
 ## 项目概述
 
-这是《Mastering Ethereum》的中文翻译版，原书写于2017-2018年，部分内容可能已过时。
+《Mastering Ethereum》中文翻译版。英文原版位于 `en_origion/ethereumbook/src/`。
+
+**翻译原则**：信（准确）、达（通顺）、雅（优美）
+
+---
 
 ## 命令
 
-### `update Chapter_X.md`
+### `translate-Chapter_X`
 
-当用户输入 `update Chapter_X.md` (如 `update Chapter_1.md`) 时，执行以下验证+检查+更新流程：
+输入 `translate-Chapter_1` 或 `translate-Chapter_2` 等，执行对照翻译+技术更新：
 
-#### 1. 读取章节内容
-- 读取指定的 .md 文件
+#### 执行流程
 
-#### 2. 技术内容验证
-检查以下关键技术点是否与最新以太坊技术吻合：
+1. **读取文件**
+   - 英文原版：`en_origion/ethereumbook/src/chapter_X.md`
+   - 中文译文：`Chapter_X.md`
+
+2. **搜索最新技术**
+   - `Ethereum roadmap [当前年份] latest updates`
+   - `Ethereum Pectra Fusaka [当前年份]`
+
+3. **逐段对照改进**
+   - 修正偏离原意的翻译
+   - 补充遗漏内容
+   - 优化中文表达，避免翻译腔
+   - 首次出现的术语给出中英对照
+
+4. **技术更新**
+   - 更新过时描述（见下方速查表）
+   - 替换失效链接
+   - 添加译注标注更新时间
+
+5. **输出摘要**
+   - 准确性修正
+   - 内容补充
+   - 技术更新
+   - 信息来源 (Sources)
+
+---
+
+## 过时内容速查表
+
+翻译时检查以下内容是否需要更新：
 
 | 检查项 | 过时内容 | 正确内容 |
 |--------|----------|----------|
-| 共识机制 | PoW/Ethash/工作量证明 | PoS/权益证明 (2022年9月 The Merge 后) |
-| Casper | "计划中"/"未来" | 已通过 The Merge 实现 |
-| 开发阶段 | Frontier/Homestead/Metropolis/Serenity 四阶段 | 已完成 The Merge，当前路线图为 Surge/Scourge/Verge/Purge/Splurge |
-| 客户端 | Parity | Parity 已停止维护，现主流：Geth、Nethermind、Besu、Erigon |
-| P2P消息 | Whisper | Whisper 已弃用，被 Waku 取代 |
-| 存储 | Swarm (作为以太坊核心组件) | Swarm 已独立于以太坊 |
-| Gas 模型 | 传统 Gas 拍卖 | EIP-1559 (2021年 London 升级后引入 Base Fee + Priority Fee) |
+| 共识机制 | PoW / Ethash | PoS（2022年9月 The Merge） |
+| Casper | "计划中" / "未来" | 已实现 |
+| 开发阶段 | 仅 Frontier→Serenity | 补充 Surge/Verge/Purge/Splurge |
+| 客户端 | Parity | 已停维，用 Nethermind 替代 |
+| P2P 消息 | Whisper | 已弃用，被 Waku 取代 |
+| 存储 | Swarm（核心组件） | 已独立，非以太坊核心 |
+| Gas 模型 | 传统拍卖 | EIP-1559（Base Fee + Priority Fee） |
 
-#### 3. 链接验证
-检查所有外部链接是否可访问：
-- 使用 WebFetch 工具验证每个 http/https 链接
-- 记录失效链接 (404、证书错误等)
-- 提供替代链接建议
+## 失效链接替代
 
-**已知失效链接及替代：**
+| 失效链接 | 替代 |
+|----------|------|
+| `github.com/ethereum/wiki/wiki/*` | `ethereum.org/developers/docs/` |
+| `leveldb.org` | `github.com/google/leveldb` |
+| `parity.io` | `nethermind.io` |
+| `vitalik.ca/*` | `vitalik.eth.limo/*` |
 
-| 失效链接 | 替代链接 |
-|----------|----------|
-| `https://github.com/ethereum/wiki/wiki/*` | `https://ethereum.org/developers/docs/` |
-| `http://leveldb.org` | `https://github.com/google/leveldb` |
-| `https://parity.io/` (以太坊客户端) | `https://nethermind.io/` 或移除 |
-| `https://vitalik.ca/*` (如不稳定) | `https://vitalik.eth.limo/*` |
+---
 
-#### 4. 更新内容
-- 修正过时的技术描述
-- 替换失效链接
-- 保持原文风格和结构
-- 添加必要的历史背景说明（如"注：原书写于2018年，以下内容已更新至2026年"）
+## 以太坊升级里程碑
 
-#### 5. 输出报告
-完成后输出：
-- 技术内容修改摘要
-- 链接修复列表
-- 仍需人工确认的问题
-
-## 以太坊重要里程碑 (供参考)
-
-| 时间 | 事件 | 影响 |
+| 时间 | 升级 | 要点 |
 |------|------|------|
-| 2015年7月 | Frontier 启动 | 以太坊主网上线 |
-| 2016年3月 | Homestead | 第二阶段 |
-| 2016年7月 | DAO 硬分叉 | ETH/ETC 分裂 |
-| 2017年10月 | Byzantium | Metropolis 第一部分 |
-| 2019年2月 | Constantinople | Metropolis 第二部分 |
-| 2019年12月 | Istanbul | |
-| 2021年4月 | Berlin | |
-| 2021年8月 | London | EIP-1559 引入 |
-| 2022年9月15日 | **The Merge** | PoW → PoS |
-| 2023年4月 | Shanghai/Capella | 质押提款启用 |
-| 2024年3月 | Cancun/Deneb | Proto-Danksharding (EIP-4844) |
+| 2015-07 | Frontier | 主网上线 |
+| 2016-03 | Homestead | 第二阶段 |
+| 2016-07 | DAO 硬分叉 | ETH/ETC 分裂 |
+| 2017-10 | Byzantium | Metropolis 第一部分 |
+| 2019-02 | Constantinople | Metropolis 第二部分 |
+| 2019-12 | Istanbul | |
+| 2021-04 | Berlin | |
+| 2021-08 | London | EIP-1559 |
+| **2022-09-15** | **The Merge** | **PoW → PoS** |
+| 2023-04 | Shanghai/Capella | 质押提款 |
+| 2024-03 | Cancun/Deneb | EIP-4844 Proto-Danksharding |
+| **2025-05-07** | **Pectra** | 11 EIPs, blob 翻倍, EIP-7702 |
+| **2025-12-03** | **Fusaka** | PeerDAS, Gas 上限 60M |
+| 2026 H1 (计划) | Glamsterdam | 并行处理, ZK 验证 |
+| 2026 H2 (计划) | Hegota | Verkle 树 |
 
-## 当前以太坊客户端生态
+---
 
-**执行层客户端：**
-- Geth (Go) - 最广泛使用
-- Nethermind (C#)
-- Besu (Java)
-- Erigon (Go) - 存档节点优化
+## 客户端生态
 
-**共识层客户端：**
-- Prysm (Go)
-- Lighthouse (Rust)
-- Teku (Java)
-- Nimbus (Nim)
-- Lodestar (TypeScript)
+**执行层**：Geth (Go)、Nethermind (C#)、Besu (Java)、Erigon (Go)
+
+**共识层**：Prysm (Go)、Lighthouse (Rust)、Teku (Java)、Nimbus (Nim)、Lodestar (TS)
+
+---
+
+## 参考来源
+
+| 资源 | URL |
+|------|-----|
+| 官方路线图 | https://ethereum.org/roadmap/ |
+| 开发者文档 | https://ethereum.org/developers/docs/ |
+| 黄皮书 | https://ethereum.github.io/yellowpaper/paper.pdf |
+| 共识规范 | https://github.com/ethereum/consensus-specs |
+| 执行规范 | https://github.com/ethereum/execution-specs |
+| Vitalik 博客 | https://vitalik.eth.limo/ |
+
+---
+
+## 术语对照表
+
+| English | 中文 | 备注 |
+|---------|------|------|
+| State Machine | 状态机 | |
+| Smart Contract | 智能合约 | |
+| Turing Complete | 图灵完备 | |
+| Proof of Stake | 权益证明 | PoS |
+| Proof of Work | 工作量证明 | PoW |
+| Validator | 验证者 | |
+| Execution Layer | 执行层 | |
+| Consensus Layer | 共识层 | |
+| Gas | Gas | 不译 |
+| EVM | 以太坊虚拟机 | |
+| DApp | 去中心化应用 | |
+| Rollup | Rollup | 不译 |
+| Blob | Blob | 不译 |
+| Sharding | 分片 | |
+| Verkle Tree | Verkle 树 | |
+| Finality | 最终性 | |
+| Halting Problem | 停机问题 | |
+| Singleton | 单例 | |
