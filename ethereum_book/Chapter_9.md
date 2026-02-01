@@ -1,4 +1,4 @@
-[上一章：智能合约](第八章.md)
+[上一章：智能合约](Chapter_8.md)
 
 
 # 开发工具，框架和库
@@ -706,6 +706,5 @@ Github link; https://github.com/etcdevteam/emerald-platform
 
 Documentation link; https://docs.etcdevteam.com
 
-[下一章：Tokens](第十章.md)
+[下一章：Tokens](Chapter_10.md)
 
-![赞赏译者](images/thanks.jpeg)

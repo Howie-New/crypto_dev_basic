@@ -1,4 +1,4 @@
-[上一章：以太坊标准](第十八章.md)
+[上一章：以太坊标准](Chapter_18.md)
 
 <a id="ethereum_fork_history"></a>
 
@@ -244,4 +244,3 @@ DAO中的一想安全措施是所有提款请求都要延迟28天。这为社区
 
 全书完结
 
-![赞赏译者](images/thanks.jpeg)

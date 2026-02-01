@@ -1,4 +1,4 @@
-[上一章：交易](第七章.md)
+[上一章：交易](Chapter_7.md)
 
 <a id="smart_contracts_chapter"></a>
 
@@ -1837,6 +1837,5 @@ eth.getStorageAt(address, position)
 ....
 获取位于 `address` 的存储，并使用 `position` 的偏移量显示该合约中存储的数据。
 
-[下一章：开发工具，框架和库](第九章.md)
+[下一章：开发工具，框架和库](Chapter_9.md)
 
-![赞赏译者](images/thanks.jpeg)

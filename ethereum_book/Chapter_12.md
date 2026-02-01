@@ -1,4 +1,4 @@
-[上一章：去中心化应用 (DApps)](第十一章.md)
+[上一章：去中心化应用 (DApps)](Chapter_11.md)
 
 <a id="oracles_chap"></a>
 
@@ -312,6 +312,5 @@ https://www.reddit.com/r/ethereum/comments/73rgzu/is_solving_the_oracle_problem_
 https://medium.com/truebit/a-file-system-dilemma-2bd81a2cba25
 https://medium.com/@roman.brodetski/introducing-oracul-decentralized-oracle-data-feed-solution-for-ethereum-5cab1ca8bb64
 
-[下一章：Gas](第十三章.md)
+[下一章：Gas](Chapter_13.md)
 
-![赞赏译者](images/thanks.jpeg)

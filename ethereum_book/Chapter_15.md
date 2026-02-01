@@ -1,4 +1,4 @@
-[上一章：以太坊虚拟机](第十四章.md)
+[上一章：以太坊虚拟机](Chapter_14.md)
 
 [Consensus]
 
@@ -155,6 +155,5 @@ Polkadot的Relay-Chains使用*Proof of Stake（PoS*系统，其中结构化状�
 - Polkadot link: https://polkadot.network
 - Polkadot presentation at Berlin Parity Ethereum link: https://www.youtube.com/watch?v=gbXEcNTgNco
 
-[下一章：Vyper：面向合约的编程语言](第十六章.md)
+[下一章：Vyper：面向合约的编程语言](Chapter_16.md)
 
-![赞赏译者](images/thanks.jpeg)

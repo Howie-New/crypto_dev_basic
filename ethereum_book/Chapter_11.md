@@ -1,4 +1,4 @@
-[上一章：Tokens](第十章.md)
+[上一章：Tokens](Chapter_10.md)
 
 <a id="decentralized_applications_chap"></a>
 
@@ -249,6 +249,5 @@ Decentraland是以太坊区块链支持的虚拟现实平台。用户可以创�
 
 Website：https://decentraland.org/
 
-[下一章：Oracles](第十二章.md)
+[下一章：Oracles](Chapter_12.md)
 
-![赞赏译者](images/thanks.jpeg)

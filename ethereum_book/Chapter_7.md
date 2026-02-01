@@ -1,4 +1,4 @@
-[上一章：钱包](第六章.md)
+[上一章：钱包](Chapter_6.md)
 
 <a id="tx_chapter"></a>
 
@@ -747,7 +747,6 @@ K~2~ = r^-1^ (sR^'^ - zG)
 讨论和 Grid+ 参考实现：
 https://blog.gridplus.io/toward-an-ethereum-multisig-standard-c566c7b7a3f6
 
-[下一章：智能合约](第八章.md)
+[下一章：智能合约](Chapter_8.md)
 
 
-![赞赏译者](images/thanks.jpeg)

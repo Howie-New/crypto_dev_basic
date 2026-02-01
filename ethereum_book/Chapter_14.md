@@ -1,4 +1,4 @@
-[上一章：Gas](第十三章.md)
+[上一章：Gas](Chapter_13.md)
 
 <a id="evm_chapter"></a>
 
@@ -566,7 +566,6 @@ DIV（函数标识符）的结果被推送到堆栈上，我们的新堆栈如�
 * [ByteCode To Opcode Disassembler](https://etherscan.io/opcode-tool) (用于检查/调试编译是否完整运行，如果源代码未发布则可用于逆向工程)
 
 
-[下一章：共识](第十五章.md)
+[下一章：共识](Chapter_15.md)
 
-![赞赏译者](images/thanks.jpeg)
 

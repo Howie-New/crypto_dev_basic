@@ -1,4 +1,4 @@
-[上一章：Vyper：面向合约的编程语言](第十六章.md)
+[上一章：Vyper：面向合约的编程语言](Chapter_16.md)
 
 <a id="communications_between_nodes"></a>
 
@@ -134,6 +134,5 @@
 
 他们可以存储给定ID的评级并相应地给予优先权。
 
-[下一章：以太坊标准](第十八章.md)
+[下一章：以太坊标准](Chapter_18.md)
 
-![赞赏译者](images/thanks.jpeg)

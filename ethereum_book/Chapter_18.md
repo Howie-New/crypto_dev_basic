@@ -1,4 +1,4 @@
-[上一章：DevP2P协议](第十七章.md)
+[上一章：DevP2P协议](Chapter_17.md)
 
 [appendix]
 <a id="ethereum_standards"></a>
@@ -88,6 +88,5 @@ ERCs的增加是通过[EIPs](https://github.com/ethereum/EIPs)，以太坊改进
 | [EIP-827](https://github.com/ethereum/EIPs/issues/827) | ERC-827 A extension of the standard interface ERC20 for tokens with methods that allows the execution of calls inside transfer and approvals. This standard provides basic functionality to transfer tokens, as well as allow tokens to be approved so they can be spent by another on-chain third party. Also it allows to execute calls on transfers and approvals. | Augusto Lemble | ERC | Draft |
 | [EIP-930](https://github.com/ethereum/EIPs/issues/930) | ERC-930 The ES (Eternal Storage) contract is owned by an address that have write permissions. The storage is public, which means everyone has read permissions. It store the data on mappings, using one mapping per type of variable. The use of this contract allows the developer to migrate the storage easily to another contract if needed. | Augusto Lemble | ERC | Draft |
 
-[下一章：以太坊分叉历史](第十九章.md)
+[下一章：以太坊分叉历史](Chapter_19.md)
 
-![赞赏译者](images/thanks.jpeg)

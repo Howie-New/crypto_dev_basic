@@ -1,4 +1,4 @@
-[上一章：Oracles](第十二章.md)
+[上一章：Oracles](Chapter_12.md)
 
 <a id="gas"></a>
 
@@ -141,7 +141,6 @@ https://github.com/ethereum/EIPs/issues/35
 https://ethresear.ch/t/a-simple-and-principled-way-to-compute-rent-fees/1455
 https://ethresear.ch/t/improving-the-ux-of-rent-with-a-sleeping-waking-mechanism/1480
 
-[下一章：以太坊虚拟机](第十四章.md)
+[下一章：以太坊虚拟机](Chapter_14.md)
 
-![赞赏译者](images/thanks.jpeg)
 

@@ -3,7 +3,7 @@
 ## 什么是以太坊
 
 
-[上一章：术语](术语.md)
+[上一章：术语](Glossary.md)
 
 以太网是“世界的计算机”，这是以太坊平台的一种常见描述。这是什么意思呢？让我们首先从关注计算机科学的描述开始，然后对以太坊的功能和特性进行更实际的解读，并将其与比特币和其他分布式账本技术（简单起见，我们将经常使用“区块链”指代）进行对比。
 
@@ -18,7 +18,7 @@
 ### 与比特币的比较
 
 
-很多之前有一些加密货币的经验人会加入以太坊，特别是比特币。以太坊与其他开放区块链共享许多通用元素：连接参与者的对等网络，用于状态同步（工作证明）的共识算法，数字货币（以太）和全局账本（区块链）。
+很多之前有一些加密货币的经验人会加入以太坊，特别是比特币。以太坊与其他开放区块链共享许多通用元素：连接参与者的对等网络，用于状态同步的共识算法（以太坊现使用权益证明），数字货币（以太）和全局账本（区块链）。
 
 <a id="blockchain_components"></a>
 
@@ -65,7 +65,7 @@
 
 本书的两位作者都收到了白皮书的初稿，并对其进行了评论。Andreas M. Antonopoulos 对这个想法很感兴趣，并向Vitalik询问了很多关于使用单独的区块链实施智能合约执行的共识规则以及图灵完备语言的影响等问题。Andreas非常关注以太坊的进展，但他正在写作“Mastering Bitcoin”一书的早期阶段，直到很久以后才直接参与以太坊。然而，Gavin Wood博士是第一批接触Vitalik并提供帮助提供C ++编程技能的人员之一。Gavin成为了以太坊的联合创始人，联合设计师和CTO。
 
-正如Vitalik在他的 ["Ethereum Prehistory"](https://vitalik.ca/general/2017/09/14/prehistory.html) 中所述:
+正如Vitalik在他的 ["Ethereum Prehistory"](https://vitalik.eth.limo/general/2017/09/14/prehistory.html) 中所述:
 
 当时的以太坊协议完全是我自己的创作。然而，从这里开始，新的参与者开始加入。迄今为止协议方面最突出的是Gavin Wood。
 
@@ -83,16 +83,18 @@
 
 Vitalik Buterin的文章“以太坊史前史”于2017年9月出版，提供了以太坊最早时刻的迷人第一人称视角。
 
-你可以在 https://vitalik.ca/general/2017/09/14/prehistory.html 阅读。
+你可以在 https://vitalik.eth.limo/general/2017/09/14/prehistory.html 阅读。
 
 <a id="development_stages"></a>
 
 ### 以太坊开发的四个阶段
 
 
-以太坊的诞生是第一阶段的启动，名为“前沿（Frontier）”。以太坊的发展计划分四个阶段进行，每个新阶段都会发生重大变化。每个阶段都可能包含子版本，称为“硬分叉”，它们以不向后兼容的方式改变功能。
+以太坊的诞生是第一阶段的启动，名为"前沿（Frontier）"。以太坊的发展经历了多个重要阶段和硬分叉，其中最重大的里程碑是2022年9月15日的 **The Merge（合并）**，标志着以太坊从工作量证明（PoW）正式转向权益证明（PoS）。
 
-四个主要的发展阶段代号为前沿（Frontier），家园（Homestead），大都会（Metropolis）和宁静（Serenity）。中间的硬分叉代号为“冰河时代（Ice Age）”，“DAO”，“蜜桔前哨（Tangerine Whistle）”，“假龙（Spurious Dragon）”，“拜占庭（Byzantium）”和“君士坦丁堡（Constantinople）”。它们在下面列出，以及硬分叉发生的块号：
+> **译注**：原书写于2018年，以下开发阶段信息已更新至2026年。
+
+以太坊的重要发展阶段和硬分叉如下：
 
 <a id="past_transitions"></a>
 
@@ -129,33 +131,49 @@ Vitalik Buterin的文章“以太坊史前史”于2017年9月出版，提供了
 : "Spurious Dragon" - 解决更多拒绝服务攻击向量和另一种状态清除的硬分叉，还包括转播攻击保护机制。
 
 
+**Block #4,370,000**
+: *"Byzantium（拜占庭）"* - 2017年10月，Metropolis 阶段的第一部分。
+
+
+**Block #7,280,000**
+: *"Constantinople（君士坦丁堡）"* - 2019年2月，Metropolis 阶段的第二部分。
+
+
+**Block #9,069,000**
+: *"Istanbul（伊斯坦布尔）"* - 2019年12月。
+
+
+**Block #12,244,000**
+: *"Berlin（柏林）"* - 2021年4月。
+
+
+**Block #12,965,000**
+: *"London（伦敦）"* - 2021年8月，引入 EIP-1559，改变了 Gas 费用机制。
+
+
+**Block #15,537,394**
+: *"The Merge（合并）"* - 2022年9月15日，以太坊从工作量证明（PoW）转向权益证明（PoS），这是以太坊历史上最重大的升级。
+
+
+**Slot #6,209,536**
+: *"Shanghai/Capella"* - 2023年4月，启用质押 ETH 提款功能。
+
+
+**Slot #8,626,176**
+: *"Cancun/Deneb"* - 2024年3月，引入 Proto-Danksharding（EIP-4844），为 Layer 2 扩容提供支持。
+
 <a id="current_state"></a>
 
 #### 当前状态
 
 
-我们目前位于_Metropolis_阶段，该阶段计划为两个次级版本的硬分叉 (参见 [hard_fork](#hard_fork)) ，代号 _Byzantium_ 我 _Constantinople_。拜占庭于2017年10月生效，君士坦丁堡预计将在2018年中期。
+以太坊已完成向权益证明的过渡（The Merge）。当前的发展路线图围绕以下几个方向：
 
-
-**Block #4,370,000**
-: *“大都会拜占庭”* - 大都会是以太坊的第三阶段，正是撰写本书的时间，于2017年10月启动。拜占庭是Metropolis的两个硬分叉中的第一个。
-
-
-<a id="future_plans"></a>
-
-#### 未来的计划
-
-
-在大都会拜占庭硬分叉之后，大都会还有一个硬分叉计划。大都会之后是以太坊部署的最后阶段，代号为Serenity。
-
-
-**Constantinople**
-: - 大都会阶段的第二部分，计划在2018年中期。预计将包括切换到混合的工作证明/权益证明共识算法，以及其他变更。
-
-
-
-**Serenity**
-: 以太坊的第四个也是最后一个阶段。宁静尚未有计划的发布日期。
+- **The Surge**: 通过分片和 Rollup 实现大规模扩容
+- **The Scourge**: 抵抗审查和去中心化
+- **The Verge**: 通过 Verkle 树简化验证
+- **The Purge**: 简化协议，减少历史数据存储需求
+- **The Splurge**: 其他改进
 
 
 <a id="general_purpose_blockchain"></a>
@@ -201,12 +219,12 @@ Vitalik Buterin的文章“以太坊史前史”于2017年9月出版，提供了
 
 
 **Consensus Algorithm**
-: 以太坊目前使用名为_Ethash_的工作量证明算法，但有计划在不久的将来将过渡到称为_Casper_的权益证明（Proof-of-Stake）系统。
+: 以太坊自2022年9月 The Merge 后采用权益证明（Proof-of-Stake）共识机制。验证者需要质押32 ETH来参与区块验证和提议。此前使用的 Ethash 工作量证明算法已被废弃。
 
 
 
 **Clients**
-: 以太坊有几个可互操作的客户端软件实现，其中最突出的是 _Go-Ethereum（Geth）_和_Parity_。
+: 以太坊采用执行层+共识层的双层客户端架构。执行层客户端包括 _Geth_（Go）、_Nethermind_（C#）、_Besu_（Java）、_Erigon_（Go）；共识层客户端包括 _Prysm_、_Lighthouse_、_Teku_、_Nimbus_、_Lodestar_。运行节点需要同时运行一个执行层客户端和一个共识层客户端。
 
 
 <a id="references"></a>
@@ -217,32 +235,32 @@ Vitalik Buterin的文章“以太坊史前史”于2017年9月出版，提供了
 以太坊黄皮书:
 https://ethereum.github.io/yellowpaper/paper.pdf
 
-褐皮书”：为更广泛的读者以不太正式的语言重写了“黄皮书”：
+褐皮书：为更广泛的读者以不太正式的语言重写了"黄皮书"：
 https://github.com/chronaeon/beigepaper
 
 ÐΞVp2p 网络协议:
-https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol
+https://ethereum.org/en/developers/docs/networking-layer/
 
-以太坊状态机 —— 一个“Awesome”资源列表
-https://github.com/ethereum/wiki/wiki/Ethereum-Virtual-Machine-(EVM)-Awesome-List
+以太坊虚拟机 (EVM) 文档:
+https://ethereum.org/en/developers/docs/evm/
 
 LevelDB 数据库 (最经常用于存储区块链本地副本):
-http://leveldb.org
+https://github.com/google/leveldb
 
 Merkle Patricia Trees:
-https://github.com/ethereum/wiki/wiki/Patricia-Tree
+https://ethereum.org/en/developers/docs/data-structures-and-encoding/patricia-merkle-trie/
 
-Ethash 工作量证明共识算法：
-https://github.com/ethereum/wiki/wiki/Ethash
-
-Casper 权益证明 v1 实现指南:
-https://github.com/ethereum/research/wiki/Casper-Version-1-Implementation-Guide
+权益证明共识机制:
+https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
 
 Go-Ethereum (Geth) 客户端:
 https://geth.ethereum.org/
 
-Parity 以太坊客户端:
-https://parity.io/
+Nethermind 客户端:
+https://nethermind.io/
+
+Besu 客户端:
+https://besu.hyperledger.org/
 
 <a id="turing_completeness"></a>
 
@@ -315,7 +333,11 @@ DApp至少由以下部分组成：
 
 DApps的概念旨在将万维网引入其下一个自然演进，将去中心化对等协议引入Web应用程序的每个方面。用于描述这种演变的术语是 _Web3_，意思是网络的第三个“版本”。由Gavin Wood首先提出，_web3_代表了Web应用程序的新愿景和焦点：从集中拥有和管理的应用程序到基于去中心化协议的应用程序。
 
-在后面的章节中，我们将探索Ethereum ` web3js ` JavaScript库，它将你的浏览器中运行的JavaScript应用程序与以太坊区块链连接起来。`web3.js` 库还包含一个名为 _Swarm_ 的P2P存储网络接口和一个称为 _Whisper_ 的P2P消息传递服务。通过在你的Web浏览器中运行的JavaScript库中包含这三个组件，开发人员可以使用完整的应用程序开发套件来构建web3 DApps：
+在后面的章节中，我们将探索Ethereum ` web3js ` JavaScript库，它将你的浏览器中运行的JavaScript应用程序与以太坊区块链连接起来。
+
+> **译注**：原书提到的 Whisper P2P 消息协议已被弃用，现已被 Waku 取代。Swarm 存储网络目前作为独立项目运行，不再是以太坊核心组件。现代 DApp 开发通常使用 ethers.js 或 viem 等更新的库。
+
+通过在你的Web浏览器中运行的JavaScript库，开发人员可以使用完整的应用程序开发套件来构建web3 DApps：
 
 <a id="web_suite"></a>
 ![](images/web3suite.png)
@@ -357,6 +379,5 @@ DApps的概念旨在将万维网引入其下一个自然演进，将去中心化
 
 你将了解以太坊的工作方式，以及为什么这样设计。你将能够理解每个组成部分的工作方式，它们如何组合在一起以及为什么。
 
-[下一章：以太坊基础](第二章.md)
+[下一章：以太坊基础](Chapter_2.md)
 
-![赞赏译者](images/thanks.jpeg)

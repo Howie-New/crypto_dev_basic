@@ -3,7 +3,7 @@
 ## 以太坊基础
 
 
-[上一章：什么是以太坊](第一章.md)
+[上一章：什么是以太坊](Chapter_1.md)
 
 <a id="control_responsibility"></a>
 
@@ -565,6 +565,5 @@ msg.sender.transfer(withdraw_amount);
 
 我们将在“智能合约”中做更多的智能合约编程，并了解最佳实践和安全考虑。
 
-[下一章：以太坊客户端](第三章.md)
+[下一章：以太坊客户端](Chapter_3.md)
 
-![赞赏译者](images/thanks.jpeg)

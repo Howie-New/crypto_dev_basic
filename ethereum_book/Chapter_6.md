@@ -3,7 +3,7 @@
 ## 钱包
 
 
-[上一章：密钥与地址](第五章.md)
+[上一章：密钥与地址](Chapter_5.md)
 
 在以太坊中，“钱包”一词有几个不同的含义。
 
@@ -437,6 +437,5 @@ https://github.com/satoshilabs/slips/blob/master/slip-0044.md
 | M/44+`'``/0``'``/3``'`+/1/14 | The fifteenth change-address public key for the fourth Bitcoin account |
 | m/44+`'``/2``'``/0``'`+/0/1 | The second private key in the Litecoin main account, for signing transactions |
 
-[下一章：交易](第七章.md)
+[下一章：交易](Chapter_7.md)
 
-![赞赏译者](images/thanks.jpeg)
